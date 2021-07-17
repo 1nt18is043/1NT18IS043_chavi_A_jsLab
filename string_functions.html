@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: rgba(176, 229, 250, 0.801);
+        </style>
+    <script>
+        var str="Web tutorial lab";
+
+        function findTxt(){
+            var txt = document.getElementById("fintxt").value;
+            console.log(txt)
+            var pos = str.search(`${txt}`)
+            document.getElementById("tx").innerHTML = pos;
+        }
+        function slc(){
+            var num1 = document.getElementById("slc1").value;
+            var num2 = document.getElementById("slc2").value;
+            console.log(num1);
+            console.log(num2);
+            var res = str.slice(num1,num2);
+            console.log(res)
+            document.getElementById("sc").innerHTML = res;
+        }
+            
+            function len()
+            {
+               
+                var a=str.length;
+                document.getElementById("ln").innerHTML =a;
+            }
+
+            function lwrc()
+            {
+                var a=str.toLowerCase();
+                document.getElementById("low").innerHTML =a;
+
+            }
+
+            function uprc()
+            {
+                var a=str.toUpperCase();
+                document.getElementById("up").innerHTML =a;
+
+            }
+
+
+            function findTxt()
+            {
+            var txt = document.getElementById("fintxt").value;
+            console.log(txt)
+            var pos = str.search(`${txt}`)
+            document.getElementById("tx").innerHTML = pos;
+             }
+
+
+            function inc()
+            {
+                var inctext = document.getElementById("intxt").value;
+                var a=str.includes(`${inctext}`);
+                document.getElementById("incl").innerHTML =a;
+
+            }
+
+            function strw()
+            {
+                var strtext = document.getElementById("strtxt").value;
+                var a=str.startsWith(`${strtext}`);
+                document.getElementById("star").innerHTML =a;
+
+            }
+
+            function endw()
+            {
+                var endtext = document.getElementById("endtxt").value;
+                var a=str.endsWith(`${endtext}`);
+                document.getElementById("end").innerHTML =a;
+
+            }
+
+            function srch()
+            {
+                var searchtext = document.getElementById("srchtext").value;
+                var a=str.search(`${searchtext}`);
+                document.getElementById("sear").innerHTML =a;
+
+            }
+
+            function indx()
+            {
+                var idxtext = document.getElementById("indextext").value;
+                var a=str.indexOf(`${idxtext}`);
+                document.getElementById("index").innerHTML =a;
+
+            }
+
+            function rplc()
+            {
+                var toberepl = document.getElementById("toberep").value;
+                var repstr = document.getElementById("toberep").value;
+                var a=str.replace(`${toberepl}`,`${repstr}`);
+                document.getElementById("repl").innerHTML =a;
+
+            }
+    </script>
+</head>
+<body>
+    <h1>String objects</h1>
+
+    <b>String used is : Web Tutorial Lab</b>
+    <p>First occurrence of specified text in the string:</p>
+    <input type="text" id="fintxt" placeholder="Enter specific word.." />
+    <button onclick="findTxt()">Search</button>
+    <p id="tx"></p>
+    <p>Enter 2 parameters for slicing function:</p>
+    <input type="number" id="slc1" placeholder="Enter 1st param.." />&nbsp;<input type="number" id="slc2" placeholder="Enter 2nd param.." />
+    <button onclick="slc()">Search</button>
+    <p id="sc"></p>
+
+    <p>String length:</p>
+    <button onclick="len()">Find length</button>
+    <p id="ln"></p>
+    <div class="strlwr">
+        <button onmouseover="lwrc()">To LowerCase</button></center></div></br>
+    </div>
+    <p id="low"></p>
+    <div class="strupr">
+        <button onmouseover="uprc()">To UpperCase</button></center></div></br>
+    </div>
+    <p id="up"></p>
+
+</body>
+</html>

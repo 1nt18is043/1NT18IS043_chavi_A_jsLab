@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating string functions</title>
+    <style>
+        body {background-color: rgba(237, 211, 255, 0.801);}
+        
+        button{
+            background-color: rgb(255, 157, 214);
+        }
+    </style>
+    <script>
+                    var str="Web tutorial lab";
+            
+            function len()
+            {
+               
+                var a=str.length;
+                document.getElementById("ln").innerHTML =a;
+            }
+
+            function lwrc()
+            {
+                var a=str.toLowerCase();
+                document.getElementById("low").innerHTML =a;
+
+            }
+
+            function uprc()
+            {
+                var a=str.toUpperCase();
+                document.getElementById("up").innerHTML =a;
+
+            }
+
+
+            function findTxt()
+            {
+            var txt = document.getElementById("fintxt").value;
+            console.log(txt)
+            var pos = str.search(`${txt}`)
+            document.getElementById("tx").innerHTML = pos;
+             }
+
+
+            function inc()
+            {
+                var inctext = document.getElementById("intxt").value;
+                var a=str.includes(`${inctext}`);
+                document.getElementById("incl").innerHTML =a;
+
+            }
+
+            function strw()
+            {
+                var strtext = document.getElementById("strtxt").value;
+                var a=str.startsWith(`${strtext}`);
+                document.getElementById("star").innerHTML =a;
+
+            }
+
+            function endw()
+            {
+                var endtext = document.getElementById("endtxt").value;
+                var a=str.endsWith(`${endtext}`);
+                document.getElementById("end").innerHTML =a;
+
+            }
+
+            function srch()
+            {
+                var searchtext = document.getElementById("srchtext").value;
+                var a=str.search(`${searchtext}`);
+                document.getElementById("sear").innerHTML =a;
+
+            }
+
+            function indx()
+            {
+                var idxtext = document.getElementById("indextext").value;
+                var a=str.indexOf(`${idxtext}`);
+                document.getElementById("index").innerHTML =a;
+
+            }
+
+            function rplc()
+            {
+                var toberepl = document.getElementById("toberep").value;
+                var repstr = document.getElementById("toberep").value;
+                var a=str.replace(`${toberepl}`,`${repstr}`);
+                document.getElementById("repl").innerHTML =a;
+
+            }
+
+
+    </script>
+</head>
+<body>
+    <h1>Demonstrating String objects</h1>
+    <div class="strlen">
+        <button onmouseover="len()">Length</button></center></div></br>
+    </div>
+    <p id="ln"></p>
+    <div class="strlwr">
+        <button onmouseover="lwrc()">To LowerCase</button></center></div></br>
+    </div>
+    <p id="low"></p>
+    <div class="strupr">
+        <button onmouseover="uprc()">To UpperCase</button></center></div></br>
+    </div>
+    <p id="up"></p>
+
+
+    <p>To find out the first occurrence of a specified text in the sring</p>
+    <input type="text" id="fintxt" placeholder="Enter the string:" />
+    <button onclick="findTxt()">Search</button>
+    <p id="tx"></p>
+
+
+    <div class="strinc">
+        <input type="text" id="intxt" placeholder="Enter a string:" />
+        <button onmouseover="inc()">Check if given string present or not</button></center></div></br>
+        <p id="incl"></p>
+    </div>
+    
+    <div class="startwith">
+        <input type="text" id="strtxt" placeholder="Enter a string:" />
+        <button onmouseover="strw()">Check if given string starts with string mentioned or not</button></center></div></br>
+        <p id="star"></p>
+    </div>
+    
+    <div class="endswith">
+        <input type="text" id="endtxt" placeholder="Enter a string:" />
+        <button onmouseover="endw()">Check if given string ends with string mentioned or not</button></center></div></br>
+        <p id="end"></p>
+    </div>
+    
+    <div class="search">
+        <input type="text" id="srchtext" placeholder="Enter a string:" />
+        <button onmouseover="srch()">Search for a string</button></center></div></br>
+        <p id="sear"></p>
+    </div>
+    
+    <div class="index">
+        <input type="text" id="indextext" placeholder="Enter a string:" />
+        <button onmouseover="indx()">Display index of a string</button></center></div></br>
+        <p id="index"></p>
+    </div>
+    
+    <div class="replace">
+        <input type="text" id="toberep" placeholder="Enter string to be replaced:" />
+        <input type="text" id="repstr" placeholder="Enter new string :" />
+        <button onmouseover="rplc()">Replace</button></center></div></br>
+        <p id="repl"></p>
+    </div>
+    
+</body>
+</html>

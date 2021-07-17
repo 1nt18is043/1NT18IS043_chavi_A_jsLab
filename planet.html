@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <script>
+        function planet(name, distance){
+            this.name = name;
+            this.distance = distance;
+
+            this.display = function(){
+                document.getElementById("dsp").innerHTML =  `Planet name is ${this.name} and it's distance from sun is ${this.distance} million kms`
+            }
+        }
+        function func1(){
+            let nwPlanet = new planet("Mercury", "52.816")
+            nwPlanet.display()
+            
+            butn.style.visibility= 'visible';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse1.mm.bing.net/th?id=OIP.Tj0TCHKU_lBjZj6wV698vAHaHZ&pid=Api&rs=1&c=1&qlt=95&w=120&h=120)";
+        }
+        function morefunc1(){
+            document.getElementById("disp1").innerHTML = "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets."
+            butn.style.visibility= 'hidden';
+            
+        }
+        function func2(){
+            let nwPlanet2 = new planet("Venus", "107.78")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'visible';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse1.mm.bing.net/th?id=OIP.ElFVryPyqVgITDjy6AfKogHaHb&pid=Api&P=0&w=300&h=300)";
+        }
+        function morefunc2(){
+            document.getElementById("disp1").innerHTML = "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight."
+            butn2.style.visibility= 'hidden';
+        }
+
+        function func3(){
+            let nwPlanet2 = new planet("Earth", "151.06")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'visible';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse2.mm.bing.net/th?id=OIP.CXKV__WrjPI8ZX_QC95b3wHaHa&pid=Api&P=0&w=300&h=300)"
+        }
+        function morefunc3(){
+            document.getElementById("disp1").innerHTML = "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other fresh water, which together constitute the hydrosphere. Much of Earth's polar regions are covered in ice."
+            butn3.style.visibility= 'hidden';
+        }
+
+        function func4(){
+            let nwPlanet2 = new planet("Mars", "247.72")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'visible';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse4.mm.bing.net/th?id=OIP.hJnbhbfR1UtiIoaekiEoegHaHa&pid=Api&P=0&w=300&h=300)"
+        }
+        function morefunc4(){
+            document.getElementById("disp1").innerHTML = "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the 'Red Planet'"
+            butn4.style.visibility= 'hidden';
+        }
+
+        function func5(){
+            let nwPlanet2 = new planet("Jupiter", "756.52")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'visible';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse4.mm.bing.net/th?id=OIP.YO8Ui2SwrDyGLqkj6d47QgHaHG&pid=Api&P=0&w=158&h=152)";
+        }
+        function morefunc5(){
+            document.getElementById("disp1").innerHTML = "Jupiter is the fifth planet from the sun. Jupiter’s four largest moons (the Galilean Satellites) are Io, Europa, Ganymede and Callisto."
+            butn5.style.visibility= 'hidden';
+        }
+
+        function func6(){
+            let nwPlanet2 = new planet("Saturn", "1488.10")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'visible';
+            butn7.style.visibility= 'hidden';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse1.mm.bing.net/th?id=OIP.ILkklJtHLo-z35YYiDoNuAHaDA&pid=Api&rs=1&c=1&qlt=95&w=240&h=97)";
+        }
+        function morefunc6(){
+            document.getElementById("disp1").innerHTML = "Saturn is the sixth planet from our Sun (a star) and orbits at a distance of about 886 million miles (1.4 billion kilometers) from the Sun."
+            butn6.style.visibility= 'hidden';
+        }
+        function func7(){
+            
+            let nwPlanet2 = new planet("Uranus", "17.9")
+            nwPlanet2.display()
+            butn.style.visibility = 'hidden';
+            butn2.style.visibility= 'hidden';
+            butn3.style.visibility= 'hidden';
+            butn4.style.visibility= 'hidden';
+            butn5.style.visibility= 'hidden';
+            butn6.style.visibility= 'hidden';
+            butn7.style.visibility= 'visible';
+            document.getElementById("disp1").innerHTML = ""
+            document.body.style.backgroundImage = "url(https://tse1.explicit.bing.net/th?id=OIP.11RBDPw6lFeuUtqnIQbZsgHaHZ&pid=Api&P=0&w=300&h=300)";
+        }
+        function morefunc7(){
+            document.getElementById("disp1").innerHTML = "Uranus is surrounded by a set of 13 rings. Uranus is an ice giant (instead of a gas giant). It is mostly made of flowing icy materials above a solid core. Uranus has a thick atmosphere made of methane, hydrogen, and helium. Uranus is the only planet that spins on its side. Uranus spins the opposite direction as Earth and most other planets."
+            butn7.style.visibility= 'hidden';
+        }
+    </script>
+    <style>
+        body{
+            background-image: url("https://tse4.mm.bing.net/th?id=OIP.XitNlSEOOKpawKYZ03-84wHaE2&pid=Api&P=0&w=251&h=165");
+            background-repeat: no-repeat ;
+            background-size: cover;
+            background-blend-mode: luminosity;
+            background-position: right;
+        }
+        button{
+            justify-content: space-around;
+        }
+        #butn2{
+            visibility: hidden;
+        }
+        #butn3{
+            visibility: hidden;
+        }
+        #butn4{
+            visibility: hidden;
+        }
+        #butn5{
+            visibility: hidden;
+        }
+        #butn6{
+            visibility: hidden;
+        }
+        #butn7{
+            visibility: hidden;
+        }
+        #butn{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planets information</h1>
+    <div style="margin-top: 50px; justify-items: stretch; justify-self: stretch; ">
+        <button onclick="func1()">Mercury</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="func2()">Venus</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="func3()">Earth</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="func4()">Mars</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="func5()">Jupiter</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="func6()">Saturn</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="func7()">Uranus</button>&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <p id="dsp"></p>
+        <button id="butn" onclick="morefunc1()">Click here to know more info</button>
+        <button id="butn2" onclick="morefunc2()">Click here to know more info</button>
+        <button id="butn3" onclick="morefunc3()">Click here to know more info</button>
+        <button id="butn4" onclick="morefunc4()">Click here to know more info</button>
+        <button id="butn5" onclick="morefunc5()">Click here to know more info</button>
+        <button id="butn6" onclick="morefunc6()">Click here to know more info</button>
+        <button id="butn7" onclick="morefunc7()">Click here to know more info</button>
+        <p id="disp1"></p>
+    </div>
+    
+</body>
+</html>
